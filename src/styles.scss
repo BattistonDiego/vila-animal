@@ -1,1 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
+// src/styles.scss
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --purple: #5b3fd6;
+  --purple-light: #7c5ce8;
+  --purple-bg: #eef0ff;
+  --purple-dark: #3b27a1;
+  --text: #1a1a2e;
+  --muted: #6b7280;
+  --border: #e5e7eb;
+  --bg: #ffffff;
+  --bg2: #f8f7ff;
+  --purple-dark2: #7b3fa8;
+  --blue: #89cff0;
+  --blue-dark: #4ba3c7;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.6;
+}

@@ -1,0 +1,75 @@
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+  height: 68px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Baloo 2', cursive;
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: var(--purple-dark2);
+  text-decoration: none;
+}
+
+.logo-main {
+  width: 122px;
+  height: auto;
+  object-fit: contain;
+}
+.logo-icon {
+  width: 38px;
+  height: 38px;
+  background: var(--purple-bg);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+}
+.nav-links a {
+  text-decoration: none;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.nav-links a:hover {
+  color: var(--text);
+}
+.btn-nav {
+  background: var(--purple-dark2);
+  color: #fff !important;
+  padding: 10px 22px;
+  border-radius: 10px;
+  font-weight: 600 !important;
+  transition: background 0.2s !important;
+}
+.btn-nav:hover {
+  background: var(--purple-dark) !important;
+}
+
+#inicio {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 3rem;
+  padding: 5rem 5% 4rem;
+}
