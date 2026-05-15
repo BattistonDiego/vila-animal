@@ -49,55 +49,30 @@
     <div class="services-grid">
       <div class="service-card">
         <div class="service-icon">🚿</div>
-        <div class="service-title">Banhos Especializados</div>
+        <div class="service-title">Banho & Tosa</div>
         <p class="service-desc">
-          Mais de 10 tipos de banho: Sublime, Spa Prosperi, Extra Suave, Terapêutico, Megamazon,
-          Vanilla Spa e muito mais. Produtos Hydra® premium.
+          Mais de 10 tipos de banho com produtos Hydra® premium e tosas especializadas por raça.
+          Groomer referência em campeonatos nacionais.
         </p>
         <a [routerLink]="['/']" fragment="contato" class="service-link">Saiba mais →</a>
       </div>
+
       <div class="service-card">
-        <div class="service-icon">✂️</div>
-        <div class="service-title">Tosa Profissional</div>
+        <div class="service-icon">🏠</div>
+        <div class="service-title">Creche</div>
         <p class="service-desc">
-          Tosa na máquina, tesoura fofinha, específica da raça, trimming e carding. Com a expertise
-          do Groomer Vinicius Dei Gobbi, referência em campeonatos.
+          Seu pet fica em um ambiente seguro, acolhedor e divertido enquanto você trabalha.
+          Monitoramento, socialização e muito carinho durante todo o dia.
         </p>
         <a [routerLink]="['/']" fragment="contato" class="service-link">Saiba mais →</a>
       </div>
+
       <div class="service-card">
-        <div class="service-icon">💆</div>
-        <div class="service-title">Tratamentos & Hidratação</div>
+        <div class="service-icon">🩺</div>
+        <div class="service-title">Clínica Veterinária</div>
         <p class="service-desc">
-          Hidratação Flash Argan, Hidratação Luxo, Nutrição Pet Spa Senses, Reconstrução Intensiva,
-          Cauterização e Biorreparação Vitaforce.
-        </p>
-        <a [routerLink]="['/']" fragment="contato" class="service-link">Saiba mais →</a>
-      </div>
-      <div class="service-card">
-        <div class="service-icon">🐾</div>
-        <div class="service-title">Serviços Extras</div>
-        <p class="service-desc">
-          Corte de unhas, tosa higiênica, spa das patas, harmonização facial, higiene bucal,
-          colorimetria e mapeamento de pelagem PRP.
-        </p>
-        <a [routerLink]="['/']" fragment="contato" class="service-link">Saiba mais →</a>
-      </div>
-      <div class="service-card">
-        <div class="service-icon">📦</div>
-        <div class="service-title">Pacotes Mensais</div>
-        <p class="service-desc">
-          Pacotes Mensal, Trimestral e Semestral com economia de até 25%, horário exclusivo, tosa
-          higiênica inclusa e pagamento recorrente em Pix ou cartão.
-        </p>
-        <a [routerLink]="['/']" fragment="contato" class="service-link">Saiba mais →</a>
-      </div>
-      <div class="service-card">
-        <div class="service-icon">🎨</div>
-        <div class="service-title">Colorimetria & Estética</div>
-        <p class="service-desc">
-          Colorimetria simples ou degradê em pata, orelha ou cauda. Tratamento Detox, tonalização de
-          pelagem branca e recuperação de pelagem.
+          Atendimento clínico e cirúrgico com veterinários especializados. Consultas, vacinas,
+          exames e procedimentos com todo cuidado que seu pet merece.
         </p>
         <a [routerLink]="['/']" fragment="contato" class="service-link">Saiba mais →</a>
       </div>
@@ -276,12 +251,9 @@
             <label>Serviço desejado</label>
             <select formControlName="servico">
               <option value="">Selecione um serviço</option>
-              <option>Banhos Especializados</option>
-              <option>Tosa Profissional</option>
-              <option>Tratamentos & Hidratação</option>
-              <option>Serviços Extras</option>
-              <option>Colorimetria & Estética</option>
-              <option>Pacotes Mensais</option>
+              <option>Banho & Tosa</option>
+              <option>Creche</option>
+              <option>Clínica Veterinária</option>
             </select>
           </div>
           <button type="submit" class="btn-submit">Enviar solicitação</button>
