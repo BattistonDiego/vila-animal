@@ -578,10 +578,10 @@ textarea {
 
 @media (max-width: 900px) {
   #inicio {
-    padding-top: 45px;
+    grid-template-columns: 1fr;
+    padding: 2rem 5%;
   }
 
-  #inicio,
   .about-grid,
   .contact-grid {
     grid-template-columns: 1fr;
@@ -595,17 +595,80 @@ textarea {
   .hero-title {
     font-size: 2.2rem;
   }
+
   .hero-img {
     height: 300px;
   }
+
   .form-row {
     grid-template-columns: 1fr;
+  }
+
+  .about-img {
+    height: 250px;
   }
 }
 
 @media (max-width: 600px) {
+  section {
+    padding: 3rem 4%;
+  }
+
+  .hero-wrap {
+    padding: 0 4%;
+  }
+
+  #inicio {
+    padding: 2rem 4%;
+    gap: 2rem;
+  }
+
+  .hero-title {
+    font-size: 1.8rem;
+  }
+
+  .hero-badge {
+    font-size: 0.78rem;
+  }
+
+  .hero-btns {
+    flex-direction: column;
+
+    a {
+      text-align: center;
+      width: 100%;
+    }
+  }
+
+  .hero-img {
+    height: 220px;
+  }
+
+  .rating-card {
+    right: 0;
+    bottom: -12px;
+    padding: 10px 14px;
+  }
+
   .services-grid,
   .reviews-grid {
     grid-template-columns: 1fr;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .contact-grid {
+    gap: 2rem;
+  }
+
+  .form-card {
+    padding: 1.2rem;
+  }
+
+  .about-title {
+    font-size: 1.5rem;
   }
 }

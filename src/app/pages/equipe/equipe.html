@@ -1,1 +1,44 @@
-<p>equipe works!</p>
+<!-- hero -->
+<div class="team-hero">
+  <div class="team-label">NOSSA EQUIPE</div>
+  <h1 class="team-title">Quem cuida do seu <span>melhor amigo</span></h1>
+  <p class="team-desc">
+    Profissionais apaixonados, qualificados e prontos para oferecer o melhor atendimento ao seu pet.
+    Conheça as pessoas que fazem da Vila Animal um lugar especial.
+  </p>
+</div>
+
+<!-- grid -->
+<section class="team-section">
+  <div class="team-inner">
+    <div class="team-grid">
+      @for (membro of membrosMock; track membro.nome) {
+        <div class="member-card">
+          <img [src]="membro.foto" [alt]="membro.nome" class="member-photo" />
+          <div class="member-info">
+            <div class="member-name">{{ membro.nome }}</div>
+            <div class="member-role">{{ membro.cargo }}</div>
+            <p class="member-desc">{{ membro.desc }}</p>
+            <!-- faltava a tag <a> aqui -->
+            <a href="https://instagram.com/vilaanimal" target="_blank" class="member-ig">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" />
+                <circle cx="12" cy="12" r="4" />
+                <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+              </svg>
+              {{ membro.ig }}
+            </a>
+            <!-- faltava fechar a tag -->
+          </div>
+        </div>
+      }
+    </div>
+
+    <!-- CTA -->
+    <div class="team-cta">
+      <h3>Pronto para conhecer nossa equipe pessoalmente?</h3>
+      <p>Venha nos visitar ou agende um horário. Vamos receber você e seu pet com todo carinho.</p>
+      <a [routerLink]="['/']" fragment="contato" class="btn-purple">Agendar atendimento</a>
+    </div>
+  </div>
+</section>
