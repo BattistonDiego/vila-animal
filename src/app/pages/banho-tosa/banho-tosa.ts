@@ -1,0 +1,240 @@
+import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
+import { CommonModule } from '@angular/common';
+
+@Component({
+  selector: 'app-banho-tosa',
+  standalone: true,
+  imports: [RouterLink, CommonModule],
+  templateUrl: './banho-tosa.html',
+  styleUrl: './banho-tosa.scss',
+})
+export class BanhoTosaComponent {
+  banhos = [
+    {
+      icone: '✨',
+      nome: 'Banho Sublime',
+      badge: 'Mais popular',
+      badgeColor: 'purple',
+      desc: 'Indicado para todos os tipos de pelagem, proporcionando uma limpeza eficaz e segura.',
+      diferenciais: 'Banho prolongado e hidratante.',
+      produtos: [
+        'Shampoo Neutralizador de Odores',
+        'Shampoo Neutro',
+        'Condicionador Brilho e Desembaraço',
+        'Colônia Forever',
+      ],
+    },
+    {
+      icone: '🤍',
+      nome: 'Banho Extra Suave',
+      badge: 'Para peles sensíveis',
+      badgeColor: 'blue',
+      desc: 'Indicado para face e pets com pele sensível (Filhotes, Atópicos e Idosos). Limpeza suave sem irritar a pele.',
+      diferenciais: 'Proteção contra irritações e suavidade garantida.',
+      produtos: ['Extra Soft Shampoo'],
+    },
+    {
+      icone: '💪',
+      nome: 'Banho para Limpeza Pesada',
+      badge: null,
+      badgeColor: null,
+      desc: 'Indicado para remoção de sujeiras intensas, ideal para pets expostos a ambientes mais sujos.',
+      diferenciais: 'Limpeza intensa sem agredir a pelagem.',
+      produtos: [
+        'X-treme Shampoo',
+        'Shampoo Neutro ou específico para cor/tipo de pelagem',
+        'Condicionador Brilho e Desembaraço',
+        'Colônia Forever',
+      ],
+    },
+    {
+      icone: '🌿',
+      nome: 'Banho para Pelagem Oleosa',
+      badge: null,
+      badgeColor: null,
+      desc: 'Ideal para reduzir a oleosidade da pelagem, deixando mais leve e com brilho.',
+      diferenciais: 'Controle eficaz da oleosidade, proporcionando saúde para a pelagem.',
+      produtos: [
+        'Shampoo Neutralizador de Odores',
+        'Shampoo Pelos Oleosos',
+        'Condicionador Brilho e Desembaraço',
+        'Colônia Forever',
+      ],
+    },
+    {
+      icone: '💧',
+      nome: 'Remoção de Oleosidade Localizada',
+      badge: null,
+      badgeColor: null,
+      desc: 'Indicado para pets com áreas específicas de oleosidade excessiva, como uso de pomadas ou gatos com oleosidade na cauda.',
+      diferenciais: 'Tratamento direcionado para regiões específicas.',
+      produtos: ['Oil Redux'],
+    },
+    {
+      icone: '🌸',
+      nome: 'SPA Prosperi',
+      badge: 'Experiência relaxante',
+      badgeColor: 'blue',
+      desc: 'Indicado para pets reativos, ansiosos e medrosos. A combinação de um blend de óleos essenciais e técnicas especiais promove conforto e tranquilidade.',
+      diferenciais: 'Redução do estresse e efeito calmante.',
+      produtos: ['Spray de Ambiente', 'Sérum para Massagem', 'Leave-in Rituals'],
+    },
+    {
+      icone: '📦',
+      nome: 'Banho para Máximo Volume',
+      badge: null,
+      badgeColor: null,
+      desc: 'Indicado para pets que necessitam de pelagem com mais volume e textura.',
+      diferenciais: 'Aumenta o volume da pelagem com um acabamento sedoso e brilhante.',
+      produtos: ['Shampoo Pró-Volume', 'Intense Repair Máximo Volume', 'Colônia Forever'],
+    },
+    {
+      icone: '✨',
+      nome: 'Banho Liso Perfeito',
+      badge: null,
+      badgeColor: null,
+      desc: 'Indicado para pets que necessitam de uma pelagem mais lisa e sedosa.',
+      diferenciais: 'Deixa a pelagem mais lisa e alinhada, com brilho intenso.',
+      produtos: [
+        'Shampoo Neutralizador de Odores',
+        'Pró-Liss Shampoo',
+        'Intense Repair Liso Perfeito',
+        'Colônia Forever',
+      ],
+    },
+    {
+      icone: '⚪',
+      nome: 'Banho para Pelagem Clara',
+      badge: null,
+      badgeColor: null,
+      desc: 'Ideal para pets de pelagem clara, promovendo a manutenção da cor e do brilho.',
+      diferenciais: 'Preserva a cor e o brilho dos pelos claros.',
+      produtos: [
+        'Shampoo Neutralizador de Odores',
+        'Shampoo Pelos Claros',
+        'Condicionador Brilho e Desembaraço',
+        'Colônia Forever',
+      ],
+    },
+    {
+      icone: '🩺',
+      nome: 'Banho Terapêutico',
+      badge: null,
+      badgeColor: null,
+      desc: 'Ideal para pets com problemas dermatológicos. Prepara a pele para o produto indicado pelo Veterinário.',
+      diferenciais: 'Prepara a pele para tratamentos dermatológicos específicos.',
+      produtos: [
+        'Shampoo Primer Soft Care',
+        'Produto do cliente',
+        'Condicionador K Tret Soft Care',
+      ],
+    },
+    {
+      icone: '🌑',
+      nome: 'Banho para Pelagem Escura',
+      badge: null,
+      badgeColor: null,
+      desc: 'Indicado para pets de pelagem escura, ajudando no realce da cor.',
+      diferenciais: 'Realça a cor e o brilho dos pelos escuros.',
+      produtos: [
+        'Shampoo Neutralizador de Odores',
+        'Shampoo Pelos Escuros',
+        'Condicionador Brilho e Desembaraço',
+        'Colônia Forever',
+      ],
+    },
+    {
+      icone: '🌟',
+      nome: 'Banho para Pelagem Dourada',
+      badge: null,
+      badgeColor: null,
+      desc: 'Ideal para pets com pelagem dourada, realçando a tonalidade dourada e o brilho.',
+      diferenciais: 'Preserva o tom dourado e o brilho dos pelos.',
+      produtos: [
+        'Shampoo Neutralizador de Odores',
+        'Shampoo Pelos Dourados',
+        'Condicionador Brilho e Desembaraço',
+        'Colônia Forever',
+      ],
+    },
+    {
+      icone: '🍃',
+      nome: 'Banho Megamazon',
+      badge: 'Vegano',
+      badgeColor: 'green',
+      desc: 'Indicado para pets que buscam um banho com produtos veganos e fragrâncias frutadas.',
+      diferenciais: 'Produtos veganos e fragrâncias refrescantes de frutas.',
+      produtos: [
+        'Shampoo, Condicionador e Colônia Energy (Guaraná & Açaí)',
+        'ou Shampoo, Condicionador e Colônia Soul (Cupuaçu)',
+      ],
+    },
+    {
+      icone: '🍦',
+      nome: 'Banho Vanilla Spa',
+      badge: null,
+      badgeColor: null,
+      desc: 'Indicado para pets que buscam uma experiência de fragrância marcante e diferenciada, com o toque doce da Vanilla.',
+      diferenciais: 'Fragrância marcante de Vanilla para uma experiência sensorial única.',
+      produtos: [
+        'Shampoo Vanilla Style Collection',
+        'Condicionador Vanilla Style Collection',
+        'Colônia Vanilla Style Collection William Galharde',
+      ],
+    },
+    {
+      icone: '🐾',
+      nome: 'Banho para Remoção de Pelos Mortos',
+      badge: 'Pelagem densa',
+      badgeColor: 'blue',
+      desc: 'Indicado para pets que soltam muito pelo ou possuem pelagem densa e dupla (Spitz, Husky, Golden, ChowChow, Persa e Maine Coon).',
+      diferenciais:
+        'Reduz a queda de pelos, remove o excesso de subpelo morto, facilita a escovação.',
+      produtos: [
+        'Ultra Deshedding and Detangling Shampoo',
+        'Shampoo Neutralizador de Odores',
+        'Condicionador Brilho e Desembaraço',
+        'Colônia Forever',
+      ],
+    },
+  ];
+
+  tosas = [
+    {
+      nome: 'Tosa na Máquina + Tesoura',
+      desc: 'Combinação de máquina e tesoura para um acabamento preciso e uniforme.',
+      portes: ['Pequeno', 'Médio', 'Grande'],
+    },
+    {
+      nome: 'Tosa na Tesoura Fofinha',
+      desc: 'Tosa delicada com tesoura, ideal para pets que precisam de um acabamento mais suave e arredondado.',
+      portes: ['Pequeno', 'Médio', 'Grande'],
+    },
+    {
+      nome: 'Tosa Específica da Raça',
+      desc: 'Tosa seguindo os padrões da raça, com técnicas específicas para cada tipo de pelagem.',
+      portes: ['Consulte'],
+    },
+    {
+      nome: 'Trimming da Raça',
+      desc: 'Técnica de remoção manual de pelos mortos, preservando a textura natural da pelagem.',
+      portes: ['Médio', 'Grande'],
+    },
+    {
+      nome: 'Carding',
+      desc: 'Técnica especializada para remoção de subpelo e manutenção da textura natural da pelagem.',
+      portes: ['Pequeno', 'Médio', 'Grande'],
+    },
+    {
+      nome: 'Tosa Higiênica Simples',
+      desc: 'Remoção dos pelos das genitais e patas.',
+      portes: ['Todos os portes'],
+    },
+    {
+      nome: 'Tosa Higiênica Completa',
+      desc: 'Remoção dos pelos das genitais e patas, arredondamento das patinhas e pequena limpeza nos pelos do bumbum.',
+      portes: ['Todos os portes'],
+    },
+  ];
+}

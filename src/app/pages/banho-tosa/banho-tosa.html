@@ -1,0 +1,88 @@
+<!-- Hero -->
+<div class="bt-hero">
+  <div class="bt-hero-inner">
+    <div class="bt-badge"><span>🚿</span> Banho & Tosa</div>
+    <h1 class="bt-title">Tipos de <span>banhos</span> para o seu pet</h1>
+    <p class="bt-desc">
+      Cada pet tem uma necessidade única. Conheça nossas opções de banho especializado, com produtos
+      premium e técnicas que respeitam a saúde da pele e da pelagem do seu melhor amigo.
+    </p>
+  </div>
+</div>
+
+<!-- Banhos -->
+<section class="bt-section">
+  <div class="bt-inner">
+    <div class="bt-grid">
+      @for (banho of banhos; track banho.nome) {
+        <div class="bt-card">
+          <div class="bt-card-header">
+            <div class="bt-card-icon">{{ banho.icone }}</div>
+            @if (banho.badge) {
+              <span class="bt-badge-card" [ngClass]="'badge-' + banho.badgeColor">
+                {{ banho.badge }}
+              </span>
+            }
+          </div>
+          <h3 class="bt-card-title">{{ banho.nome }}</h3>
+          <div class="bt-divider"></div>
+          <p class="bt-card-desc">{{ banho.desc }}</p>
+          <div class="bt-diferenciais">
+            <span class="bt-dif-label">✦ DIFERENCIAIS</span>
+            <p>{{ banho.diferenciais }}</p>
+          </div>
+          <div class="bt-produtos">
+            <span class="bt-prod-label">PRODUTOS UTILIZADOS</span>
+            <div class="bt-tags">
+              @for (prod of banho.produtos; track prod) {
+                <span class="bt-tag">{{ prod }}</span>
+              }
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>
+
+<!-- Tosas -->
+<section class="bt-section bt-tosa-section">
+  <div class="bt-inner">
+    <div class="bt-section-header">
+      <div class="bt-section-label">NOSSOS SERVIÇOS</div>
+      <h2 class="bt-section-title">Tosas Especializadas</h2>
+      <p class="bt-section-desc">
+        Com a expertise do Groomer Vinicius Dei Gobbi, referência em campeonatos nacionais. Mais de
+        10 anos levando seu animal a outro nível em tosa.
+      </p>
+    </div>
+    <div class="bt-tosa-grid">
+      @for (tosa of tosas; track tosa.nome) {
+        <div class="bt-tosa-card">
+          <div class="bt-tosa-icon">✂️</div>
+          <h3 class="bt-tosa-title">{{ tosa.nome }}</h3>
+          <p class="bt-tosa-desc">{{ tosa.desc }}</p>
+          <div class="bt-tosa-portes">
+            @for (porte of tosa.portes; track porte) {
+              <span class="bt-porte-tag">{{ porte }}</span>
+            }
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="bt-cta">
+  <div class="bt-inner">
+    <div class="bt-cta-box">
+      <h3>Não sabe qual banho é ideal?</h3>
+      <p>
+        Nossa equipe ajuda você a escolher o tratamento perfeito para a pelagem e o perfil do seu
+        pet. Agende uma avaliação sem compromisso.
+      </p>
+      <a href="https://wa.me/5511982895828" target="_blank" class="bt-btn"> Falar com a equipe </a>
+    </div>
+  </div>
+</div>
